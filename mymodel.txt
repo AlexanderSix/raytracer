@@ -1,0 +1,178 @@
+camera cam1
+{
+  pixeldim  800 600
+  worlddim  8 6
+  viewpoint 4 3 8
+}
+
+light ceiling
+{
+   emissivity 5 3 3
+   location 4 2 -4
+}
+
+light front
+{
+   emissivity 4 4 4
+   location 4 8  2
+}
+
+light front2
+{
+   emissivity 6 5 6
+   location 10 8 4
+}
+
+light front3
+{
+   emissivity 5 7 6
+   location -2 0  4
+}
+
+light other
+{
+   emissivity 4 4 2
+   location 7 5 1
+}
+
+light lower
+{
+   emissivity 5 3 0
+   location 6 1 -2
+}
+
+material mirror
+{
+   diffuse  0 0 0
+   specular 1
+   shininess 250.0
+
+}
+
+material lightred
+{
+   diffuse 4 1 1
+   specular 1
+   shininess 250.0
+}
+
+material red
+{
+   diffuse 4.0 1.5 1.5
+   specular 1
+   shininess 50.0
+}
+
+material green
+{
+   diffuse 1.5 4.0 1.5
+   specular 1
+   shininess 50.0
+}
+
+material blue
+{
+   ambient 2 2 5
+}
+
+material deepblue
+{
+   diffuse 0.5 0.5 5
+   specular 1
+   shininess 250.0
+}
+
+material orange
+{
+   diffuse 5 3 0
+   specular 1
+   shininess 250.0
+}
+
+material deeppurple
+{
+   diffuse 1 0 5
+   specular 1
+   shininess 150.0
+}
+
+sphere centerleft
+{
+   material lightred
+   center 3 3 -4
+   radius 1
+}
+
+sphere centerright
+{
+   material red
+   center  5 3 -4
+   radius 1.0
+}
+
+sphere centerleft2
+{
+   material green
+   center 3 5 -4
+   radius 1
+}
+
+sphere centerright2
+{
+   material green
+   center  5 5 -4
+   radius 1.0
+}
+
+sphere bigleft
+{
+   material deepblue
+   center 0 0 -.5
+   radius 4
+}
+
+sphere smallright
+{
+   material deeppurple
+   center 6.6 1 -1
+   radius 1
+}
+
+plane   mirrorfloor
+{
+   material mirror
+   normal 0 1 0
+   point 0 2 0
+}
+
+plane floor
+{
+   material orange
+   normal 0 1 0
+   point 0 0 0
+}
+
+plane  back
+{
+   material blue
+   normal   0 0 1
+   point    0 0 -6
+}
+
+fplane   left
+{
+   material mirror
+   normal   5 0 4
+   point    0 0 0
+   xdir     1 0 0
+   dimensions 8 6
+}
+
+fplane   right
+{
+   material mirror
+   normal  -5  0 4
+   point    4 0 -6.93
+   xdir     1 0 0
+   dimensions 8 6
+}

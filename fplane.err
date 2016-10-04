@@ -1,0 +1,7 @@
+fplane.cpp:77:21: warning: array index 2 is past the end of the array (which contains 2 elements) [-Warray-bounds]
+                dims[0], dims[1], dims[2]);
+                                  ^    ~
+./ray.h:255:5: note: array 'dims' declared here
+        double dims[2];
+        ^
+1 warning generated.

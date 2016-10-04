@@ -1,0 +1,19 @@
+mytracer.txt
+
+Alexzander Daniel Lee and Alexander Six
+alexzal & asix
+CPSC 1020-001
+11/24/15
+Major Programming Assignment 3
+
+This file contains all of the working parts to
+our mymodel.txt and the resulting ppm image
+
+Features Implimented (and where they are implemented):
+
+Ambient Lighting (planes & spheres) - Back wall of image
+Diffuse Lighting (with shadows) - All spheres and some planes
+Finite Planes - Left and right wall of ppm image
+Specular Reflection - Spheres and mirrored planes
+Specular Glints - All spheres
+Anti-Aliasing - Best picture setting is on 4, but set on 1 for the assignment

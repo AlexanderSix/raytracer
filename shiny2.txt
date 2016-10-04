@@ -1,0 +1,56 @@
+camera cam1
+{
+  pixeldim  800 600
+  worlddim  8 6
+  viewpoint 4 3 4
+}
+
+
+material blue
+{
+   diffuse  0 0 8
+   specular 1
+   shininess 250.0
+
+}
+
+material gray
+{
+   diffuse 6 6 6
+}
+
+material red
+{
+   diffuse 8 0 0
+}
+
+
+light pinkfront
+{
+   emissivity 6 5 5
+   location 10 8 4
+}
+
+light cyanfront
+{
+   emissivity 4 6 5
+   location -2 0  4
+}
+
+sphere shadowmaker
+{
+   material blue
+   center  4 3 -6
+   radius  4
+}
+
+tiled_plane floor
+{
+   material red
+   point    0 -1 0
+   normal   0 1 0
+
+   dimensions 1 1
+   altmaterial gray
+   xdir       1 0 1
+}

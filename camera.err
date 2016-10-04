@@ -1,0 +1,7 @@
+camera.cpp:76:17: warning: array index 2 is past the end of the array (which contains 2 elements) [-Warray-bounds]
+                world_dim[1], world_dim[2]);
+                              ^         ~
+./ray.h:42:5: note: array 'world_dim' declared here
+        double world_dim[2];    /* Screen size in world coords   */
+        ^
+1 warning generated.

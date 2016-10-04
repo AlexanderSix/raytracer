@@ -1,0 +1,14 @@
+sphere.cpp:97:10: warning: variable 't' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+        else if(disc>0){
+                ^~~~~~
+sphere.cpp:101:29: note: uninitialized use occurs here
+        hitpoint.x=base->x+(dir->x*t);
+                                   ^
+sphere.cpp:97:7: note: remove the 'if' if its condition is always true
+        else if(disc>0){
+             ^~~~~~~~~~
+sphere.cpp:59:21: note: initialize the variable 't' to silence this warning
+        double a,b,c,disc,t;
+                           ^
+                            = 0.0
+1 warning generated.

@@ -1,0 +1,40 @@
+
+
+camera cam1
+{
+  pixeldim  640 480
+  worlddim  8 6
+  viewpoint 4 3 3
+}
+
+material white
+{
+   diffuse 3  3 3
+   ambient 1  1 1
+   specular 0.8
+}
+
+material green
+{
+   diffuse 1  6 1
+}
+
+light center
+{
+   location 4 10 0
+   emissivity 5 5 5
+}
+
+plane   floor
+{
+   material white
+   normal 0 1 0
+   point 0 0 0
+}
+
+plane  back
+{
+   material green
+   normal   0 0 1
+   point    0 0 -6
+}

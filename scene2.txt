@@ -1,0 +1,25 @@
+camera cam1
+{
+  pixeldim  640 480
+  worlddim  8 6
+  viewpoint 4 3 4
+}
+
+material red
+{
+   diffuse 2.0 0.5 0.5
+}
+
+sphere shadowmaker
+{
+   material red
+   center  4 3 -2
+   radius 1.5
+}
+
+light pinkfront
+{
+   emissivity 8 5  5
+   location 4 3 4
+}
+

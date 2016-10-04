@@ -1,0 +1,35 @@
+camera cam1
+{
+  pixeldim  800 600
+  worlddim  8 6
+  viewpoint 4 3 4
+}
+
+
+material blue
+{
+   diffuse  0 0 8
+   specular 1
+   shininess  50.0
+
+}
+
+
+light pinkfront
+{
+   emissivity 6 5 5
+   location 10 8 4
+}
+
+light cyanfront
+{
+   emissivity 4 6 5
+   location -2 0  4
+}
+
+sphere shadowmaker
+{
+   material blue
+   center  4 3 -6
+   radius  4
+}

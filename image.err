@@ -1,0 +1,5 @@
+clang: warning: treating 'c' input as 'c++' when in C++ mode, this behavior is deprecated
+image.c:64:24: warning: comparison of address of 'trans' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                        if(trans != 0.0 && &trans != NULL ){
+                                            ^~~~~    ~~~~
+1 warning generated.
